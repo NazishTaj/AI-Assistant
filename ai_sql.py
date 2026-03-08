@@ -145,11 +145,19 @@ RULES
 - prefer simple joins instead of nested queries
 - prefer ORDER BY + LIMIT for top results
 - never create columns that do not exist
-- The database is MySQL.
-- Use MySQL syntax only.
-- Do NOT use PostgreSQL functions like EXTRACT().
-- Use MySQL functions like YEAR(), MONTH(), DATE_FORMAT().
-- output only MYSQL query
+- The database is SQLite.
+- Use:
+strftime('%Y', date)
+strftime('%m', date)
+julianday(date1) - julianday(date2)
+
+- Do NOT use Do NOT use:
+YEAR()
+MONTH()
+DATEDIFF()
+EXTRACT()
+
+- output only SQL query
 - start query with SELECT
 - end query with semicolon
 
