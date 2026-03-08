@@ -145,9 +145,12 @@ RULES
 - prefer simple joins instead of nested queries
 - prefer ORDER BY + LIMIT for top results
 - never create columns that do not exist
-- output only SQL query
-- start query with SELECT
-- end query with semicolon
+- The database is MySQL.
+- Use MySQL syntax only.
+- Do NOT use PostgreSQL functions like EXTRACT().
+- Use MySQL functions like YEAR(), MONTH(), DATE_FORMAT().
+- output only in MYSQL query
+
 
 USER QUESTION
 {question}
