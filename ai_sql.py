@@ -57,7 +57,7 @@ sellers
 - seller_city
 - seller_state
 
-order_payments
+payments
 - order_id
 - payment_sequential
 - payment_type
