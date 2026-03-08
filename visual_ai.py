@@ -24,6 +24,9 @@ bar
 line
 pie
 scatter
+
+Do not explain anything.
+Do not add extra text.
 """
 
     response = client.chat.completions.create(
