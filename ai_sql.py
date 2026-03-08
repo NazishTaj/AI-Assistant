@@ -149,8 +149,9 @@ RULES
 - Use MySQL syntax only.
 - Do NOT use PostgreSQL functions like EXTRACT().
 - Use MySQL functions like YEAR(), MONTH(), DATE_FORMAT().
-- output only in MYSQL query
-
+- output only MYSQL query
+- start query with SELECT
+- end query with semicolon
 
 USER QUESTION
 {question}
